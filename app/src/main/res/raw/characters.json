@@ -1,0 +1,83 @@
+[
+  {
+"name": "Harry Potter",
+"occupation/house": "Gryffindor ",
+"patronus": "Stag",
+"desc": "Main character of the Harry Potter series",
+"bloodstatus": "Half-Blood",
+ "wand": " 11 inch, Holly, phoenix feather"
+
+  },
+  {
+    "name": "Ron Weasly ",
+    "occupation/house": "Gryffindor",
+    "patronus": "Jack Russell terrier",
+    "desc": "Harry Potter's best friend and love interest of Hermione Granger ",
+    "bloodstatus": "Prue-Blood",
+    "wand": "12 inch, Ash, unicorn tail hair"
+  },
+  {
+    "name": "Hermione Granger",
+    "occupation/house": "Gryffindor",
+    "patronus": "Otter",
+    "desc": "",
+    "bloodstatus": "Muggle-Born",
+    "wand": "10¾ inch, vine wood, dragon heartstring"
+  },
+  {
+  "name": "",
+  "occupation/house": "",
+  "patronus": "",
+  "desc": "",
+  "bloodstatus": "",
+  "wand": ""
+  },
+  {
+    "name": "",
+    "occupation/house": "",
+    "patronus": "",
+    "desc": "",
+    "bloodstatus": "",
+    "wand": ""
+  },
+  {
+    "name": "",
+    "occupation/house": "",
+    "patronus": "",
+    "desc": "",
+    "bloodstatus": "",
+    "wand": ""
+  },
+  {
+    "name": "",
+    "occupation/house": "",
+    "patronus": "",
+    "desc": "",
+    "bloodstatus": "",
+    "wand": ""
+  },
+  {
+    "name": "",
+    "occupation/house": "",
+    "patronus": "",
+    "desc": "",
+    "bloodstatus": "",
+    "wand": ""
+  },
+  {
+    "name": "",
+    "occupation/house": "",
+    "patronus": "",
+    "desc": "",
+    "bloodstatus": "",
+    "wand": ""
+  },
+  {
+    "name": "",
+    "occupation/house": "",
+    "patronus": "",
+    "desc": "",
+    "bloodstatus": "",
+    "wand": ""
+  }
+]
