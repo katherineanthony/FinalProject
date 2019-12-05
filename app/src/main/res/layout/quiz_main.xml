@@ -7,34 +7,66 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_quizMain_charactersQuiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="392dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="265dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_quizMain_spellsQuiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_quizMain_characters" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_quizMain_spellsQuiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="392dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="265dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_quizMain_spells" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="173dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/spells_quiz"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="93dp" />
+        android:id="@+id/imageView_quizMain_spells"
+        android:layout_width="181dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_quizMain_characters"
+        app:layout_constraintTop_toBottomOf="@+id/textView_quizMain_quizTitle"
+        app:srcCompat="@drawable/spells_quiz" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="141dp"
-        android:layout_height="130dp"
-        app:srcCompat="@drawable/images-1"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="102dp" />
+        android:id="@+id/imageView_quizMain_characters"
+        android:layout_width="176dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_quizMain_quizTitle"
+        app:srcCompat="@drawable/characters_quiz" />
+
+    <TextView
+        android:id="@+id/textView_quizMain_quizTitle"
+        android:layout_width="362dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="20dp"
+        android:text="Harry Potter Quiz"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
