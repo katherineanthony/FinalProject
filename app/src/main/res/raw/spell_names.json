@@ -31,7 +31,7 @@
   },
   {
     "name": "Avada Kedavra",
-    "type": "curse",
+    "type": "unforgivable curse",
     "effect": "Murders opponent",
     "counter-spell": null
   },
@@ -79,7 +79,7 @@
   },
   {
     "name": "Crucio",
-    "type": "curse",
+    "type": "unforgivable curse",
     "effect": "Tortures opponent",
     "counter-spell": null
   },
@@ -248,8 +248,8 @@
   },
   {
     "name": "Imperio",
-    "type": "curse",
-    "effect": "Controls a person – unforgivable",
+    "type": "unforgivable curse",
+    "effect": "Controls a person",
     "counter-spell": null
   },
   {
