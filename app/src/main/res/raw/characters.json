@@ -25,44 +25,44 @@
     "wand": "10¾ inch, vine wood, dragon heartstring"
   },
   {
-  "name": "",
-  "occupation/house": "",
-  "patronus": "",
+  "name": "Albus Dumbledore",
+  "occupation/house": "Headmaster Of Hogwarts",
+  "patronus": "Phoenix",
   "desc": "",
-  "bloodstatus": "",
-  "wand": ""
+  "bloodstatus": "Half-Blood",
+  "wand": "15 inch, Elder, Thestral tail hair core["
   },
   {
-    "name": "",
-    "occupation/house": "",
-    "patronus": "",
+    "name": "Neville Longbottom",
+    "occupation/house": "Gryffindor",
+    "patronus": null,
     "desc": "",
-    "bloodstatus": "",
-    "wand": ""
+    "bloodstatus": "Prue-Blood",
+    "wand": "13 inch, Cherry, unicorn hair"
   },
   {
-    "name": "",
-    "occupation/house": "",
-    "patronus": "",
+    "name": "Luna Lovegood",
+    "occupation/house": "Ravenclaw",
+    "patronus": "Hare",
     "desc": "",
-    "bloodstatus": "",
-    "wand": ""
+    "bloodstatus": "Pure-Blood",
+    "wand": null
   },
   {
-    "name": "",
-    "occupation/house": "",
-    "patronus": "",
+    "name": "Minerva McGonagall",
+    "occupation/house": "Gryffindor",
+    "patronus": "Cat",
     "desc": "",
-    "bloodstatus": "",
-    "wand": ""
+    "bloodstatus": "Half-Blood",
+    "wand": "9½ inch, Fir, dragon heartstring"
   },
   {
-    "name": "",
-    "occupation/house": "",
-    "patronus": "",
+    "name": "Percy Weasley",
+    "occupation/house": "Gryffindor ",
+    "patronus": null,
     "desc": "",
-    "bloodstatus": "",
-    "wand": ""
+    "bloodstatus": "Pure-Blood",
+    "wand": null
   },
   {
     "name": "",
