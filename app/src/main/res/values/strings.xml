@@ -13,4 +13,8 @@
     <string name="menu_spells">Spells</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
+    <string name="characters">Characters</string>
+    <string name="spells">Spells</string>
+    <string name="harrypotterquiz">Harry Potter Quiz</string>
 </resources>
