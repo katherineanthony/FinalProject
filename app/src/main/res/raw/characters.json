@@ -1,32 +1,32 @@
 [
   {
 "name": "Harry Potter",
-"occupation/house": "Gryffindor ",
+"house": "Gryffindor ",
 "patronus": "Stag",
-"desc": "Main character of the Harry Potter series",
+"desc": "Main character of the Harry Potter series, ",
 "bloodstatus": "Half-Blood",
  "wand": " 11 inch, Holly, phoenix feather"
 
   },
   {
     "name": "Ron Weasly ",
-    "occupation/house": "Gryffindor",
+    "house": "Gryffindor",
     "patronus": "Jack Russell terrier",
-    "desc": "Harry Potter's best friend and love interest of Hermione Granger ",
+    "desc": "Harry Potter's best ",
     "bloodstatus": "Prue-Blood",
     "wand": "12 inch, Ash, unicorn tail hair"
   },
   {
     "name": "Hermione Granger",
-    "occupation/house": "Gryffindor",
+    "house": "Gryffindor",
     "patronus": "Otter",
-    "desc": "",
+    "desc": "Harry Potter's best friend known for her academics and reltionship with Ron Weasley",
     "bloodstatus": "Muggle-Born",
     "wand": "10¾ inch, vine wood, dragon heartstring"
   },
   {
   "name": "Albus Dumbledore",
-  "occupation/house": "Headmaster Of Hogwarts",
+  "house": "Headmaster Of Hogwarts",
   "patronus": "Phoenix",
   "desc": "",
   "bloodstatus": "Half-Blood",
@@ -34,7 +34,7 @@
   },
   {
     "name": "Neville Longbottom",
-    "occupation/house": "Gryffindor",
+    "house": "Gryffindor",
     "patronus": null,
     "desc": "",
     "bloodstatus": "Prue-Blood",
@@ -42,7 +42,7 @@
   },
   {
     "name": "Luna Lovegood",
-    "occupation/house": "Ravenclaw",
+    "house": "Ravenclaw",
     "patronus": "Hare",
     "desc": "",
     "bloodstatus": "Pure-Blood",
@@ -50,7 +50,7 @@
   },
   {
     "name": "Minerva McGonagall",
-    "occupation/house": "Gryffindor",
+    "house": "Head of Gryffindor ",
     "patronus": "Cat",
     "desc": "",
     "bloodstatus": "Half-Blood",
@@ -58,15 +58,127 @@
   },
   {
     "name": "Percy Weasley",
-    "occupation/house": "Gryffindor ",
+    "house": "Gryffindor ",
     "patronus": null,
     "desc": "",
     "bloodstatus": "Pure-Blood",
     "wand": null
   },
   {
+    "name": "Fred Weasley",
+    "house": "Gryffindor",
+    "patronus": "Magpie",
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": null
+  },
+  {
+    "name": "George Weasley",
+    "house": "Gryffindor",
+    "patronus": "Magpie",
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": null
+  },
+  {
+    "name": "Rubues Hagrid",
+    "house": "Hogwarts Grounds Keeper",
+    "patronus": null,
+    "desc": "",
+    "bloodstatus": "Half-Blood",
+    "wand": "16 inch, Oak, unknown core"
+  },
+  {
+    "name": "Ginny Weasley",
+    "house": "Gryffindor",
+    "patronus": "Horse",
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": null
+  },
+  {
+    "name": "Serverus Snape",
+    "house": "Head of Slytherin",
+    "patronus": "Doe",
+    "desc": "",
+    "bloodstatus": "Half-Blood",
+    "wand": null
+  },
+  {
+    "name": "Lily Potter",
+    "house": "Gryffindor",
+    "patronus": "Doe",
+    "desc": "",
+    "bloodstatus": "Muggle-Born",
+    "wand": "10¼ inch, Willow, unknown core"
+  },
+  {
+    "name": "James Potter",
+    "house": "Gryffindor",
+    "patronus": "Stag",
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": "11 inch, Mahogany, unknown core"
+  },
+  {
+    "name": "Sirius Black",
+    "house": "Gryffindor",
+    "patronus": null,
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": null
+  },
+  {
+    "name": "Remus Lupin",
+    "house": "Auror",
+    "patronus": "Wolf",
+    "desc": "",
+    "bloodstatus": "Half-Blood",
+    "wand": "10¼ inch, Cypress, unicorn hair"
+  },
+  {
+    "name": "Draco Malfoy",
+    "house": "Slytherin",
+    "patronus": null,
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": "18 inch, Elm, dragon heartstring"
+  },
+  {
+    "name": "Lucius Malfoy",
+    "house": "Death Eater",
+    "patronus": null,
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": "Elm and dragon heartstring"
+  },
+  {
+    "name": "Cedric Diggory",
+    "house": "HufflePuff",
+    "patronus": null,
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": " 12¼ inch, Ash, unicorn hair"
+  },
+  {
+    "name": "Tom Riddle",
+    "house": "Voldemort",
+    "patronus": null,
+    "desc": "",
+    "bloodstatus": "Half-Blood",
+    "wand": "13½ inch, Yew, phoenix feather core"
+  },
+  {
+    "name": "Bellatrix Lestrange",
+    "house": "Death Eater",
+    "patronus": null,
+    "desc": "",
+    "bloodstatus": "Pure-Blood",
+    "wand": "12¾ inch, Walnut, dragon heartstring"
+  },
+  {
     "name": "",
-    "occupation/house": "",
+    "house": "",
     "patronus": "",
     "desc": "",
     "bloodstatus": "",
@@ -74,7 +186,23 @@
   },
   {
     "name": "",
-    "occupation/house": "",
+    "house": "",
+    "patronus": "",
+    "desc": "",
+    "bloodstatus": "",
+    "wand": ""
+  },
+  {
+    "name": "",
+    "house": "",
+    "patronus": "",
+    "desc": "",
+    "bloodstatus": "",
+    "wand": ""
+  },
+  {
+    "name": "",
+    "house": "",
     "patronus": "",
     "desc": "",
     "bloodstatus": "",
