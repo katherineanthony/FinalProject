@@ -18,6 +18,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.Menu;
 
@@ -78,8 +80,25 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {}
+        Fragment fragment = null;
+
+        if (id == R.id.nav_spells) {
+            fragment = new SpellsListFragment();
+        }
+        else if(id == R.id.nav_characters){
+            fragment = new CharactersListFragment();
+        }
+        else if(id == R.id.nav_quizzes){
+            fragment = new QuizzesFragment();
+        }
             // Handle the camera action
+
+        FragmentManager fm = getSupportFragmentManager();
+        if (fragment != null) {
+            fm.beginTransaction()
+                    .replace(R.id.constraintLayout_main_container, fragment)
+                    .commit();
+        }
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
