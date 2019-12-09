@@ -3,7 +3,7 @@
     "name": "Accio",
     "type": "charm",
     "effect": "Summons an object",
-    "counter-spell": "(Anti-theft charm)"
+    "counter-spell": "Anti-theft charm"
   }, 
   {
     "name": "Aguamenti",
