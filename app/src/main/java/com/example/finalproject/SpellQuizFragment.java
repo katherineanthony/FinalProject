@@ -2,14 +2,11 @@ package com.example.finalproject;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,24 +19,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
-
 import com.google.gson.Gson;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Arrays;
 import java.util.List;
 
 
-public class SpellQuizFragment extends Fragment  {
+public class SpellQuizFragment extends Fragment extends appCompatActivity {
     public static final String TAG = "SpellQuizFragment";
     private TextView textViewQuestions;
     private Button buttonTrue;
@@ -54,7 +39,7 @@ public class SpellQuizFragment extends Fragment  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_spell_quiz);
+
 
         InputStream questionsInputStream = getResources().openRawResource(R.raw.spells_quiz);
         String jsonString = readTextFile(questionsInputStream);
@@ -75,9 +60,9 @@ public class SpellQuizFragment extends Fragment  {
     }
 
     private void wireWidgets() {
-        textViewQuestions = findViewById(R.id.textn);
-        buttonFalse = findViewById(R.id.button_main_false);
-        buttonTrue = findViewById(R.id.button_main_true);
+        textViewQuestions = findViewbyId(R.id.textView_spellsQuiz_question);
+        buttonFalse = findViewById(R.id.button_spellsQuiz_false);
+        buttonTrue = findViewById(R.id.button_spellsQuiz_true);
 
     }
 
@@ -148,7 +133,6 @@ public class SpellQuizFragment extends Fragment  {
         }
         return outputStream.toString();
     }
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -158,3 +142,5 @@ public class SpellQuizFragment extends Fragment  {
         return rootView;
     }
 }
+
+
