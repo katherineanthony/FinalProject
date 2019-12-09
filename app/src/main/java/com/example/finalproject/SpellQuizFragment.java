@@ -75,7 +75,7 @@ public class SpellQuizFragment extends Fragment  {
     }
 
     private void wireWidgets() {
-        textViewQuestions = findViewById(R.id.textView_main_question);
+        textViewQuestions = findViewById(R.id.textn);
         buttonFalse = findViewById(R.id.button_main_false);
         buttonTrue = findViewById(R.id.button_main_true);
 
