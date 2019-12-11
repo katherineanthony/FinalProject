@@ -4,7 +4,7 @@
     "type": "charm",
     "effect": "Summons an object",
     "counter-spell": "Anti-theft charm"
-  }, 
+  },
   {
     "name": "Aguamenti",
     "type": "charm",
@@ -199,7 +199,7 @@
     "counter-spell": null
   },
   {
-    "name": "Flipendo",
+    "name": "f",
     "type": "jinx",
     "effect": "Knocks an object backwards",
     "counter-spell": null
