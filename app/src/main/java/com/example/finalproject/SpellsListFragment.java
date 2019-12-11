@@ -1,27 +1,35 @@
 package com.example.finalproject;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import com.google.gson.Gson;
+
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link SpellsListFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link SpellsListFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class SpellsListFragment extends Fragment {
 
+private ListView spellsListView;
 
+private TextView spellName, spellType;
+
+private SpellAdapter spellAdapter;
+
+private List<Spell> spellsList;
+
+public static final String TAG = "SpellsListFragment";
 
 
     @Override
@@ -31,18 +39,66 @@ public class SpellsListFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_spells_list, container, false);
         // wire widgets using that layout
         // call findViewById on the rootView
+        InputStream questionsInputStream = getResources().openRawResource(R.raw.spells);
+        String jsonString = readTextFile(questionsInputStream);
+        // create a gson object
+        Gson gson = new Gson();
+        // read your json file into an array of questions
+        Spell[] spells =  gson.fromJson(jsonString, Spell[].class);
+        // convert your array to a list using the Arrays utility class
+        spellsList = Arrays.asList(spells);
+        // verify that it read everything properly
+        Log.d(TAG, "onCreate: " + spellsList.toString());
         wireWidgets(rootView);
-
-        // set any listeners for said widgets
         setListeners();
-
+        spellAdapter = new SpellAdapter(spellsList);
+        spellsListView.setAdapter(spellAdapter);
         // return the inflated view
         return rootView;
     }
 
     private void wireWidgets(View rootView) {
+        spellName = rootView.findViewById(R.id.textView_spell_name);
+        spellType = rootView.findViewById(R.id.textView_spell_type);
+        spellsListView = rootView.findViewById(R.id.list_view_spell);
     }
     private void setListeners(){}
+
+    private class SpellAdapter extends ArrayAdapter<Spell> {
+        private List<Spell> spellList;
+        public SpellAdapter(List<Spell> heroesList) {
+            //since we're in the HeroListActivity class, we already have the context
+            // we're hardcoding in a particular layout, so don't need to put it in the
+            // constructer either
+            // we'll send a place holder resource to the superclass of -1
+            super(SpellsListFragment.this, -1, spellsList);
+            this.spellList = heroesList;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent){
+            // 1. inflate layout
+            LayoutInflater inflater = getLayoutInflater();
+            if(convertView == null){
+                convertView = inflater.inflate(R.layout.item_spell, parent, false);
+            }
+            // 2. wire widgets & link the hero to those widgets
+            spellName = convertView.findViewById(R.id.textView_spell_name);
+            spellType = convertView.findViewById(R.id.textView_spell_type);
+           
+
+            // set values for each widget. use the position parameter variable
+            // to get the hero that you need out of the list
+            // and set the values for the widgets
+            textView_name.setText(spellList.get(position).getName());
+            textView_rank.setText(String.valueOf(spellList.get(position).getRanking()));
+            textView_description.setText(spellList.get(position).getDescription());
+
+            //3. return inflated view
+            return convertView;
+
+        }
+    }
 
 
 }
