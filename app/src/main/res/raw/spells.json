@@ -381,7 +381,7 @@
   {
     "name": "Petrificus Totalus",
     "type": "spell",
-    "effect": "Binds body – unforgivable",
+    "effect": "Binds body ",
     "counter-spell": null
   },
   {

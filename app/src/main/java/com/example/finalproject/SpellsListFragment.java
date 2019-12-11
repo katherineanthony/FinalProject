@@ -1,5 +1,6 @@
 package com.example.finalproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -64,7 +66,17 @@ public static final String TAG = "SpellsListFragment";
         spellType = rootView.findViewById(R.id.textView_spell_type);
         spellsListView = rootView.findViewById(R.id.list_view_spell);
     }
-    private void setListeners(){}
+    private void setListeners(){
+        spellsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Spell heroClicked = spellsList.get(position);
+                Intent listViewClicked = new Intent(SpellsListFragment.this.getContext(), Spell.class);
+                listViewClicked.putExtra(EXTRA_POSITION, heroClicked);
+                startActivity(listViewClicked);
+            }
+        });
+    }
     public String readTextFile(InputStream inputStream) {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
