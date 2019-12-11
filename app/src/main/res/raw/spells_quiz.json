@@ -1,10 +1,10 @@
 [
   {
-    "question" : "The spell that Harry Potter used to bring his broom to him in the triwizard tournament was: True-Accio, False-Aparecium ",
+    "question" : "The spell that Harry Potter used to bring his broom to him in the triwizard tournament was: True - Accio, False - Aparecium ",
     "answer" : true
   },
   {
-    "question" : "The charm expelleriamus causes colorful sparks to fly out of the users wand",
+    "question" : "The charm Expelliarmus causes colorful sparks to fly out of the users wand",
     "answer" : false
   },
   {
@@ -12,15 +12,15 @@
     "answer" : true
   },
   {
-    "question" : "The spell Hermione corrects ron on in their first year was: True-Flipendo, False-Wingardium Leviosa",
+    "question" : "The spell Hermione corrects Ron on in their first year was: True - Flipendo, False - Wingardium Leviosa",
     "answer" : false
   },
   {
-    "question" : "The three unforgivable curses are Avada Kedavra,Imperio and Crucio ",
+    "question" : "The three unforgivable curses are Avada Kedavra, Imperio and Crucio ",
     "answer" : true
   },
   {
-    "question" : "Petrificus Totalus does what: True- causes the victim to laugh historically, False- puts the victim in a full body bind ",
+    "question" : "Petrificus Totalus does what: True - causes the victim to laugh historically, False - puts the victim in a full body bind ",
     "answer" : false
   },
   {

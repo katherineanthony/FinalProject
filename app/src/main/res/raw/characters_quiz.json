@@ -28,39 +28,39 @@
     "answer" : true
   },
   {
-    "question" : "Tom Marvelo Riddle rearranged becomes ",
+    "question" : "Tom Marvelo Riddle rearranged becomes 'I am Lord Voldermort'",
     "answer" : true
   },
   {
-    "question" : "",
+    "question" : "Harry discovers who the Half-Blood Prince is in the beginning of the fourth book.",
+    "answer" : false
+  },
+  {
+    "question" : "Hermione did not go back and finish her seventh year at Hogwarts.",
+    "answer" : false
+  },
+  {
+    "question" : "Remus and Tonks get married but do not have children.",
+    "answer" : false
+  },
+  {
+    "question" : "Sirius is Harry's: True - godfather, False - uncle.",
     "answer" : true
   },
   {
-    "question" : "",
+    "question" : "Fred and George are twin brothers.",
     "answer" : true
   },
   {
-    "question" : "",
-    "answer" : true
+    "question" : "Siruis's sister is Bellatrix.",
+    "answer" : false
   },
   {
-    "question" : "",
-    "answer" : true
+    "question" : "Harry and Ron took their brooms to school in the Chamber of Secrets.",
+    "answer" : false
   },
   {
-    "question" : "",
-    "answer" : true
-  },
-  {
-    "question" : "",
-    "answer" : true
-  },
-  {
-    "question" : "",
-    "answer" : true
-  },
-  {
-    "question" : "",
+    "question" : "Hagrid is: True - half-giant, half-man, False - half-ogre, half-man",
     "answer" : true
   },
   {
