@@ -64,6 +64,22 @@
     "answer" : true
   },
   {
+    "question" : "Peeves can float/fly.",
+    "answer" : true
+  },
+  {
+    "question" : "Muggles saw Harry cast a patronous in the fifth book.",
+    "answer" : false
+  },
+  {
+    "question" : "Severus Snape was in love with Harry's mother.",
+    "answer" : true
+  },
+  {
+    "question" : "Harry gets a new broom from: True - Professor McGonagall, False - Sirius Black",
+    "answer" : false
+  },
+  {
     "question" : "",
     "answer" : true
   },
