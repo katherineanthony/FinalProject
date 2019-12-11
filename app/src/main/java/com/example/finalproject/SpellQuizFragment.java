@@ -61,7 +61,7 @@ public class SpellQuizFragment extends Fragment {
             quiz = new Quiz(questionList);
             currentQuestion = 0;
             score = 0;
-            setListeners();
+
 
 
             textViewQuestions = rootView.findViewById(R.id.textView_spellsQuiz_question);
@@ -73,14 +73,14 @@ public class SpellQuizFragment extends Fragment {
                 public void onClick(View view) {
                     if(quiz.checkAnswer(true, currentQuestion)){
                         score++;
-                        Toast.makeText(SpellQuizFragment.this, "\uD83D\uDE00", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE00", Toast.LENGTH_SHORT).show();
                     }
                     else
-                        Toast.makeText(MainActivity.this, "\uD83D\uDE43", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE43", Toast.LENGTH_SHORT).show();
                     currentQuestion++;
                     if(currentQuestion == 10){
                         //go to end screen
-                        Intent scoreIntent = new Intent(MainActivity.this, EndActivity.class);
+                        Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizFragment.class);
                         scoreIntent.putExtra(EXTRA_SCORE, score);
                         startActivity(scoreIntent);
                         score = 0;
@@ -97,14 +97,14 @@ public class SpellQuizFragment extends Fragment {
                 public void onClick(View view) {
                     if(quiz.checkAnswer(false, currentQuestion)){
                         score++;
-                        Toast.makeText(MainActivity.this, "\uD83D\uDE00", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE00", Toast.LENGTH_SHORT).show();
                     }
                     else
-                        Toast.makeText(MainActivity.this, "\uD83D\uDE43", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE43", Toast.LENGTH_SHORT).show();
                     currentQuestion++;
                     if(currentQuestion == 10){
                         //go to end screen
-                        Intent scoreIntent = new Intent(MainActivity.this, EndActivity.class);
+                        Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizFragment.class);
                         scoreIntent.putExtra(EXTRA_SCORE, score);
                         startActivity(scoreIntent);
                         score = 0;
@@ -116,6 +116,7 @@ public class SpellQuizFragment extends Fragment {
 
                 }
             });
+            return rootView;
         }
         public String readTextFile(InputStream inputStream) {
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -134,7 +135,7 @@ public class SpellQuizFragment extends Fragment {
             return outputStream.toString();
         }
 
-        return rootView;
+
     }
 
 
