@@ -1,11 +1,55 @@
 [
   {
     "question" : "Dobby is freed at the end of the series",
+    "answer" : false
+  },
+  {
+    "question" : "Draco Malfoy kills Dumbledore",
+    "answer" : false
+  },
+  {
+    "question" : "Dobby is given a sock by Lucius Malfoy and is freed.",
     "answer" : true
   },
   {
-    "question" : "Draco Malfoy helps harry defeat Voldemort",
+    "question" : "Luna Lovegood saw her father die.",
     "answer" : false
+  },
+  {
+    "question" : "",
+    "answer" : true
+  },
+  {
+    "question" : "",
+    "answer" : true
+  },
+  {
+    "question" : "",
+    "answer" : true
+  },
+  {
+    "question" : "",
+    "answer" : true
+  },
+  {
+    "question" : "",
+    "answer" : true
+  },
+  {
+    "question" : "",
+    "answer" : true
+  },
+  {
+    "question" : "",
+    "answer" : true
+  },
+  {
+    "question" : "",
+    "answer" : true
+  },
+  {
+    "question" : "",
+    "answer" : true
   },
   {
     "question" : "",
