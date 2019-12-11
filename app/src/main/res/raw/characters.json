@@ -9,7 +9,7 @@
 
   },
   {
-    "name": "Ron Weasly ",
+    "name": "Ron Weasley ",
     "house": "Gryffindor",
     "patronus": "Jack Russell terrier",
     "desc": "Harry Potter's best friend, known for his large family and hair color.",
@@ -97,7 +97,7 @@
     "wand": null
   },
   {
-    "name": "Serverus Snape",
+    "name": "Severus Snape",
     "house": "Head of Slytherin",
     "patronus": "Doe",
     "desc": "Potions teacher at Hogwarts, known for hating Harry because his dad saved his life.",
