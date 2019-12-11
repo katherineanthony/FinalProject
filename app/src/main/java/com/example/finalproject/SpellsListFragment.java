@@ -35,6 +35,8 @@ private List<Spell> spellsList;
 
 public static final String TAG = "SpellsListFragment";
 
+public static final String EXTRA_POSITION = "position";
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

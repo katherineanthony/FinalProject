@@ -1,4 +1,30 @@
 package com.example.finalproject;
 
-public class SpellDetailActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class SpellDetailActivity extends AppCompatActivity {
+    private TextView name, effect, type, counterSpell;
+    private Spell spell;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_spell_detail);
+        Intent lastIntent = getIntent();
+        spell = lastIntent.getParcelableExtra(SpellsListFragment.EXTRA_POSITION);
+        wireWidgets();
+        effect.setText(spell.getEffect());
+        name.setText(spell.getName());
+        type.setText(spell.getType());
+        counterSpell.setText(spell.getCounterSpell());
+
+    }
+
+    private void wireWidgets() {
+
+    }
 }
