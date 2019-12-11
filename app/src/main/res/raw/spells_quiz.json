@@ -1,22 +1,22 @@
 [
   {
-    "question" : "",
+    "question" : "The spell that Harry Potter used to bring his broom to him in the triwizard tournament was: True-Accio, False-Aparecium ",
     "answer" : true
   },
   {
-    "question" : "",
+    "question" : "The charm expelleriamus causes colorful sparks to fly out of the users wand",
+    "answer" : false
+  },
+  {
+    "question" : "The spell erecto erects items",
     "answer" : true
   },
   {
-    "question" : "",
-    "answer" : true
+    "question" : "The spell Hermione corrects ron on in their first year was: True-Flipendo, False-Wingardium Leviosa",
+    "answer" : false
   },
   {
-    "question" : "",
-    "answer" : true
-  },
-  {
-    "question" : "",
+    "question" : "The three unforgivable curses are Avada Kedavra, ",
     "answer" : true
   },
   {
