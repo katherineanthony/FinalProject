@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
@@ -63,6 +65,23 @@ public static final String TAG = "SpellsListFragment";
         spellsListView = rootView.findViewById(R.id.list_view_spell);
     }
     private void setListeners(){}
+    public String readTextFile(InputStream inputStream) {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+        byte buf[] = new byte[1024];
+        int len;
+        try {
+            while ((len = inputStream.read(buf)) != -1) {
+                outputStream.write(buf, 0, len);
+            }
+            outputStream.close();
+            inputStream.close();
+        } catch (IOException e) {
+
+        }
+        return outputStream.toString();
+    }
+
 
     private class SpellAdapter extends ArrayAdapter<Spell> {
         private List<Spell> spellList;
@@ -71,8 +90,24 @@ public static final String TAG = "SpellsListFragment";
             // we're hardcoding in a particular layout, so don't need to put it in the
             // constructer either
             // we'll send a place holder resource to the superclass of -1
-            super(SpellsListFragment.this, -1, spellsList);
+            super(SpellsListFragment.this.getContext(), -1, spellsList);
             this.spellList = heroesList;
+        }
+        public String readTextFile(InputStream inputStream) {
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+
+            byte buf[] = new byte[1024];
+            int len;
+            try {
+                while ((len = inputStream.read(buf)) != -1) {
+                    outputStream.write(buf, 0, len);
+                }
+                outputStream.close();
+                inputStream.close();
+            } catch (IOException e) {
+
+            }
+            return outputStream.toString();
         }
 
         @Override
@@ -90,9 +125,9 @@ public static final String TAG = "SpellsListFragment";
             // set values for each widget. use the position parameter variable
             // to get the hero that you need out of the list
             // and set the values for the widgets
-            textView_name.setText(spellList.get(position).getName());
-            textView_rank.setText(String.valueOf(spellList.get(position).getRanking()));
-            textView_description.setText(spellList.get(position).getDescription());
+            spellName.setText(spellList.get(position).getName());
+            spellType.setText(String.valueOf(spellList.get(position).getType()));
+
 
             //3. return inflated view
             return convertView;
