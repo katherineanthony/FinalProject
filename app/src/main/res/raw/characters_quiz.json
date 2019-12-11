@@ -16,19 +16,19 @@
     "answer" : false
   },
   {
-    "question" : "",
+    "question" : "Harry Potter is the nephew of Petunia Dursley.",
     "answer" : true
   },
   {
-    "question" : "",
+    "question" : "Hermione breaks Harry out of the Dursley's in the Chamber of the Secrets.",
+    "answer" : false
+  },
+  {
+    "question" : "Fred and George own a joke shop.",
     "answer" : true
   },
   {
-    "question" : "",
-    "answer" : true
-  },
-  {
-    "question" : "",
+    "question" : "Tom Marvelo Riddle rearranged becomes ",
     "answer" : true
   },
   {
