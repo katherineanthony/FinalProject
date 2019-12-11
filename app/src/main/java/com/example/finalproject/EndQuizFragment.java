@@ -28,12 +28,14 @@ public class EndQuizFragment extends Fragment {
         buttonPlayAgain = rootView.findViewById(R.id.button_end_restart);
         textViewScore = rootView.findViewById(R.id.textView_end_score);
 
-    private void setListoners() {
-        buttonPlayAgain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
+        private void setListoners () {
+            buttonPlayAgain.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    finish();
 
-            }
-        });
+                }
+            });
+        }
     }
+}
