@@ -19,12 +19,12 @@
 
     <TextView
         android:id="@+id/textView_spellDetail_typeText"
-        android:layout_width="100dp"
-        android:layout_height="21dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="262dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_spellDetail_type" />
 
@@ -32,20 +32,24 @@
         android:id="@+id/textView_spellDetail_effectText"
         android:layout_width="262dp"
         android:layout_height="54dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="345dp" />
-
-    <TextView
-        android:id="@+id/textView_spellDetail_counterSpellText"
-        android:layout_width="121dp"
-        android:layout_height="23dp"
-        android:layout_marginBottom="248dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_spellDetail_counterSpellText"
+        android:layout_width="264dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="200dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -66,7 +70,7 @@
         android:text="Effect:"
         app:layout_constraintBottom_toTopOf="@+id/textView_spellDetail_effectText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_spellDetail_typeText"
         app:layout_constraintVertical_bias="0.847" />
@@ -75,9 +79,10 @@
         android:id="@+id/textView_spellDetail_counterSpell"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Charm:"
+        android:text="CounterSpell:"
         app:layout_constraintBottom_toTopOf="@+id/textView_spellDetail_counterSpellText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_spellDetail_effectText"
         app:layout_constraintVertical_bias="0.852" />
