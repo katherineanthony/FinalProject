@@ -20,7 +20,7 @@
     "answer" : true
   },
   {
-    "question" : "Petrificus Totalus does what: True - causes the victim to laugh historically, False - puts the victim in a full body bind ",
+    "question" : "Petrificus Totalus does what: True - causes the victim to laugh hysterically, False - puts the victim in a full body bind ",
     "answer" : false
   },
   {
@@ -32,12 +32,47 @@
     "answer" : true
   },
   {
-    "question" : "",
+    "question" : "What is the counter spell of Alohomora: True-Rennervate, False-Colloportus",
+    "answer" : false
+  },
+  {
+    "question" : "The spell duro does what: True-makes the the object harden, False-makes objects soften ",
     "answer" : true
   },
   {
-    "question" : "",
+    "question" : "The spell that Harry learns from the Half-Blood Prince is Sectumsempra",
+    "answer" : true
+  },
+  {
+    "question" : "The spell hocus pocus exsits in the Harry Potter universe",
+    "answer" : false
+  },
+  {
+    "question" : "The spell that Gildaroy Lockhart attempts to use on Harry is Obliviate ",
+    "answer" : true
+  },
+  {
+    "question" : "What spell allows you to conjure a patronous: True-Levicorpus, False- expecto patronum",
+    "answer" : false
+  },
+  {
+    "question" : "The spell Incendo produces flowers out of the users wand",
+    "answer" : false
+  },
+  {
+    "question" : "The counter spell for Lumos is Nox",
+    "answer" : true
+  },
+  {
+    "question" : "What spell is used to amplify voice: True-Impedimenta, False- Sonorus ",
+    "answer" : true
+  },
+  {
+    "question" : "The spell that repels muggles is Mugawium",
+    "answer" : false
+  },
+  {
+    "question" : "The spell Snape uses on Harry to get him to repel Voldemort is Legilimus",
     "answer" : true
   }
-
 ]
