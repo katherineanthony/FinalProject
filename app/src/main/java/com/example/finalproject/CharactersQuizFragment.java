@@ -80,8 +80,9 @@ public class CharactersQuizFragment extends Fragment {
                 currentQuestion++;
                 if(currentQuestion == 10){
                     //go to end screen
-                    Intent scoreIntent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizFragment.class);
+                    Intent scoreIntent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizActivity.class);
                     scoreIntent.putExtra(EXTRA_SCORE, score);
+                    scoreIntent.putExtra("CHARACTER_QUIZ_ID","CharacterQuizFragment");
                     startActivity(scoreIntent);
                     score = 0;
                     currentQuestion = 0;
@@ -104,8 +105,9 @@ public class CharactersQuizFragment extends Fragment {
                 currentQuestion++;
                 if(currentQuestion == 10){
                     //go to end screen
-                    Intent scoreIntent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizFragment.class);
+                    Intent scoreIntent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizActivity.class);
                     scoreIntent.putExtra(EXTRA_SCORE, score);
+                    scoreIntent.putExtra("CHARACTER_QUIZ_ID","CharacterQuizFragment");
                     startActivity(scoreIntent);
                     score = 0;
                     currentQuestion = 0;
