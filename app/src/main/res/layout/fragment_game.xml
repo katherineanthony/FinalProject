@@ -7,90 +7,98 @@
 
     <ImageView
         android:id="@+id/imageView_fraggame_snape4"
-        android:layout_width="105dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView_fraggame_snape3"
         app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape2"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/snapeface" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="105dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        android:id="@+id/imageView_fraggame_snape6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView_fraggame_snape5"
         app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape4"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/snapeface" />
 
     <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="105dp"
-        android:layout_height="100dp"
+        android:id="@+id/imageView_fraggame_snape8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintStart_toEndOf="@+id/imageView_fraggame_snape7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape6"
+        tools:srcCompat="@drawable/snapeface" />
 
     <ImageView
         android:id="@+id/imageView_fraggame_snape1"
-        android:layout_width="105dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape3"
         app:layout_constraintEnd_toStartOf="@+id/imageView_fraggame_snape2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars[0]" />
+        tools:srcCompat="@drawable/snapeface" />
 
     <ImageView
         android:id="@+id/imageView_fraggame_snape2"
-        android:layout_width="105dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView_fraggame_snape1"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/snapeface" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="105dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView9"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        android:id="@+id/imageView_fraggame_snape5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape7"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_fraggame_snape6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape3"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/snapeface" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="105dp"
-        android:layout_height="100dp"
+        android:id="@+id/imageView_fraggame_snape7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_fraggame_snape8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape5"
+        tools:srcCompat="@drawable/snapeface" />
 
     <ImageView
         android:id="@+id/imageView_fraggame_snape3"
-        android:layout_width="105dp"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape5"
         app:layout_constraintEnd_toStartOf="@+id/imageView_fraggame_snape4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape1"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/snapeface" />
+
+    <TextView
+        android:id="@+id/textView_fraggame_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="6dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

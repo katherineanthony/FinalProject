@@ -72,9 +72,9 @@ public static final String EXTRA_POSITION = "position";
         spellsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Spell heroClicked = spellsList.get(position);
-                Intent listViewClicked = new Intent(SpellsListFragment.this.getContext(), Spell.class);
-                listViewClicked.putExtra(EXTRA_POSITION, heroClicked);
+                Spell spellClicked = spellsList.get(position);
+                Intent listViewClicked = new Intent(SpellsListFragment.this.getContext(), SpellDetailActivity.class);
+                listViewClicked.putExtra(EXTRA_POSITION, spellClicked);
                 startActivity(listViewClicked);
             }
         });
