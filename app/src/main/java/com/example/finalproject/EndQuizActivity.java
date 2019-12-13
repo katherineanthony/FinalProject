@@ -27,8 +27,8 @@ public class EndQuizActivity extends AppCompatActivity {
         String scoreMessage1 = getString(R.string.scoreMessage1);
         String scoreMessage2 = getString(R.string.scoreMessage2);
         Intent lastIntent = getIntent();
-        String SpellQuizFragmen = getIntent().getStringExtra("SPELL_QUIZ_ID");
-        if (lastIntent == SpellQuizFragmen) {
+        String spellQuizFragment = getIntent().getStringExtra("SPELL_QUIZ_ID");
+        if (spellQuizFragment.equals("SpellQuizFragment")) {
             score = lastIntent.getIntExtra(SpellQuizFragment.EXTRA_SCORE, -1);
             textViewScore.setText(scoreMessage1 + score + scoreMessage2);
         }
