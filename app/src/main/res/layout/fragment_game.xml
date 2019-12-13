@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_fraggame_snape4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_fraggame_snape3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape2"
+        tools:srcCompat="@drawable/snapeface" />
+
+    <ImageView
+        android:id="@+id/imageView_fraggame_snape6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_fraggame_snape5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape4"
+        tools:srcCompat="@drawable/snapeface" />
+
+    <ImageView
+        android:id="@+id/imageView_fraggame_snape8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_fraggame_snape7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape6"
+        tools:srcCompat="@drawable/snapeface" />
+
+    <ImageView
+        android:id="@+id/imageView_fraggame_snape1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_fraggame_snape2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/snapeface" />
+
+    <ImageView
+        android:id="@+id/imageView_fraggame_snape2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_fraggame_snape1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/snapeface" />
+
+    <ImageView
+        android:id="@+id/imageView_fraggame_snape5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape7"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_fraggame_snape6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape3"
+        tools:srcCompat="@drawable/snapeface" />
+
+    <ImageView
+        android:id="@+id/imageView_fraggame_snape7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_fraggame_snape8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape5"
+        tools:srcCompat="@drawable/snapeface" />
+
+    <ImageView
+        android:id="@+id/imageView_fraggame_snape3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_fraggame_snape5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_fraggame_snape4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_fraggame_snape1"
+        tools:srcCompat="@drawable/snapeface" />
+
+    <TextView
+        android:id="@+id/textView_fraggame_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="345dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,10 @@ public class SpellDetailActivity extends AppCompatActivity {
     }
 
     private void wireWidgets() {
+        name = findViewById(R.id.textView_spellDescription_spellName);
+        effect = findViewById(R.id.textView_spellDetail_effectText);
+        type = findViewById(R.id.textView_spellDetail_typeText);
+        counterSpell = findViewById(R.id.textView_spellDetail_counterSpellText);
 
     }
 }
