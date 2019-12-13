@@ -16,5 +16,9 @@
             android:id="@+id/nav_spells"
             android:icon="@drawable/ic_hpwand"
             android:title="@string/menu_spells" />
+        <item
+            android:id="@+id/nav_game"
+            android:icon="@drawable/ic_pages_black_24dp"
+            android:title="@string/menu_game" />
     </group>
 </menu>

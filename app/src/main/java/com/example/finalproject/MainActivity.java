@@ -91,6 +91,9 @@ public class MainActivity extends AppCompatActivity
         else if(id == R.id.nav_quizzes){
             fragment = new QuizzesFragment();
         }
+        else if(id == R.id.nav_game){
+            fragment = new GameFragment();
+        }
             // Handle the camera action
 
         FragmentManager fm = getSupportFragmentManager();
