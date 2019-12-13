@@ -27,13 +27,15 @@ public class EndQuizActivity extends AppCompatActivity {
         String scoreMessage1 = getString(R.string.scoreMessage1);
         String scoreMessage2 = getString(R.string.scoreMessage2);
         Intent lastIntent = getIntent();
-        //if (lastIntent == String SpellQuizFragment = getIntent().getStringExtra("SPELL_QUIZ_ID")
-        //String SpellQuizFragment = getIntent().getStringExtra("SPELL_QUIZ_ID");
-        score = lastIntent.getIntExtra(SpellQuizFragment.EXTRA_SCORE, -1);
-        textViewScore.setText(scoreMessage1 + score + scoreMessage2);
-
-        score = lastIntent.getIntExtra(CharactersQuizFragment.EXTRA_SCORE, -1);
-        textViewScore.setText(scoreMessage1 + score + scoreMessage2);
+        String SpellQuizFragmen = getIntent().getStringExtra("SPELL_QUIZ_ID");
+        if (lastIntent == SpellQuizFragmen) {
+            score = lastIntent.getIntExtra(SpellQuizFragment.EXTRA_SCORE, -1);
+            textViewScore.setText(scoreMessage1 + score + scoreMessage2);
+        }
+        else {
+            score = lastIntent.getIntExtra(CharactersQuizFragment.EXTRA_SCORE, -1);
+            textViewScore.setText(scoreMessage1 + score + scoreMessage2);
+        }
         setListoners();
     }
 
