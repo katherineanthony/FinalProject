@@ -76,16 +76,16 @@
     "answer" : true
   },
   {
-    "question" : "Harry gets a new broom from: True - Professor McGonagall, False - Sirius Black",
+    "question" : "Harry gets a new broom in the third book from: True - Professor McGonagall, False - Sirius Black",
     "answer" : false
   },
   {
-    "question" : "",
+    "question" : "Hermione's parents were happy that she was a witch.",
     "answer" : true
   },
   {
-    "question" : "",
-    "answer" : true
+    "question" : "Dobby visited Harry in the hospital wing after Harry broke his arm and Lockhart made his arm turn rubber.",
+    "answer" : false
   },
   {
     "question" : "",
