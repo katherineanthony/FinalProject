@@ -80,7 +80,8 @@ public class SpellQuizFragment extends Fragment {
                     currentQuestion++;
                     if(currentQuestion == 10){
                         //go to end screen
-                        Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizFragment.class);
+                        Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizActivity.class);
+                        scoreIntent.putExtra("SPELL_QUIZ_ID","SpellQuizFragment");
                         scoreIntent.putExtra(EXTRA_SCORE, score);
                         startActivity(scoreIntent);
                         score = 0;
@@ -104,8 +105,9 @@ public class SpellQuizFragment extends Fragment {
                     currentQuestion++;
                     if(currentQuestion == 10){
                         //go to end screen
-                        Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizFragment.class);
+                        Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizActivity.class);
                         scoreIntent.putExtra(EXTRA_SCORE, score);
+                        scoreIntent.putExtra("SPELL_QUIZ_ID","SpellQuizFragment");
                         startActivity(scoreIntent);
                         score = 0;
                         currentQuestion = 0;
