@@ -61,69 +61,64 @@ public class SpellQuizFragment extends Fragment {
             quiz = new Quiz(questionList);
             currentQuestion = 0;
             score = 0;
-            setListeners();
+
 
 
             textViewQuestions = rootView.findViewById(R.id.textView_spellsQuiz_question);
             buttonFalse = rootView.findViewById(R.id.button_spellsQuiz_false);
             buttonTrue = rootView.findViewById(R.id.button_spellsQuiz_true);
+
+            buttonTrue.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(quiz.checkAnswer(true, currentQuestion)){
+                        score++;
+                        Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE00", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                        Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE43", Toast.LENGTH_SHORT).show();
+                    currentQuestion++;
+                    if(currentQuestion == 10){
+                        //go to end screen
+                        Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizFragment.class);
+                        scoreIntent.putExtra(EXTRA_SCORE, score);
+                        startActivity(scoreIntent);
+                        score = 0;
+                        currentQuestion = 0;
+                        textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
+                    }
+                    textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
+
+
+                }
+            });
+            buttonFalse.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(quiz.checkAnswer(false, currentQuestion)){
+                        score++;
+                        Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE00", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                        Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE43", Toast.LENGTH_SHORT).show();
+                    currentQuestion++;
+                    if(currentQuestion == 10){
+                        //go to end screen
+                        Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizFragment.class);
+                        scoreIntent.putExtra(EXTRA_SCORE, score);
+                        startActivity(scoreIntent);
+                        score = 0;
+                        currentQuestion = 0;
+                        textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
+                    }
+                    textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
+
+
+                }
+            });
             return rootView;
-
-
         }
-
-    private void setListeners() {
-        buttonTrue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(quiz.checkAnswer(true, currentQuestion)){
-                    score++;
-                    Toast.makeText(SpellQuizFragment.this.getContext(), "\uD83D\uDE00", Toast.LENGTH_SHORT).show();
-                }
-                else
-                    Toast.makeText(MainActivity.this, "\uD83D\uDE43", Toast.LENGTH_SHORT).show();
-                currentQuestion++;
-                if(currentQuestion == 10){
-                    //go to end screen
-                    Intent scoreIntent = new Intent(MainActivity.this, EndActivity.class);
-                    scoreIntent.putExtra(EXTRA_SCORE, score);
-                    startActivity(scoreIntent);
-                    score = 0;
-                    currentQuestion = 0;
-                    textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
-                }
-                textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
-
-
-            }
-        });
-        buttonFalse.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(quiz.checkAnswer(false, currentQuestion)){
-                    score++;
-                    Toast.makeText(MainActivity.this, "\uD83D\uDE00", Toast.LENGTH_SHORT).show();
-                }
-                else
-                    Toast.makeText(MainActivity.this, "\uD83D\uDE43", Toast.LENGTH_SHORT).show();
-                currentQuestion++;
-                if(currentQuestion == 10){
-                    //go to end screen
-                    Intent scoreIntent = new Intent(MainActivity.this, EndActivity.class);
-                    scoreIntent.putExtra(EXTRA_SCORE, score);
-                    startActivity(scoreIntent);
-                    score = 0;
-                    currentQuestion = 0;
-                    textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
-                }
-                textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
-
-
-            }
-        });
-    }
-
-    public String readTextFile(InputStream inputStream) {
+        public String readTextFile(InputStream inputStream) {
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
             byte buf[] = new byte[1024];
