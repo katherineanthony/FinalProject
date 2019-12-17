@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity
             fragment = new SpellsListFragment();
         }
         else if(id == R.id.nav_characters){
-            fragment = new CharactersListFragment();
+            fragment = new CharectersListFragment();
         }
         else if(id == R.id.nav_quizzes){
             fragment = new QuizzesFragment();
