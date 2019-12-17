@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.List;
 
 
-public class CharectersListFragment extends Fragment {
+public class CharactersListFragment extends Fragment {
     private ListView characterListView;
 
     private TextView charecterName, house;
@@ -32,7 +32,7 @@ public class CharectersListFragment extends Fragment {
 
     private List<Charecter> charecterList;
 
-    public static final String TAG = "SpellsListFragment";
+    public static final String TAG = "CharactersListFragment";
 
     public static final String EXTRA_POSITION = "position";
 
@@ -72,7 +72,7 @@ public class CharectersListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Charecter charecterClicked = charecterList.get(position);
-                Intent listViewClicked = new Intent(CharectersListFragment.this.getContext(), CharecterDetailActivity.class);
+                Intent listViewClicked = new Intent(CharactersListFragment.this.getContext(), SpellDetailActivity.class);
                 listViewClicked.putExtra(EXTRA_POSITION, charecterClicked);
                 startActivity(listViewClicked);
             }
@@ -103,7 +103,7 @@ public class CharectersListFragment extends Fragment {
             // we're hardcoding in a particular layout, so don't need to put it in the
             // constructer either
             // we'll send a place holder resource to the superclass of -1
-            super(CharectersListFragment.this.getContext(), -1, charecterList1);
+            super(CharactersListFragment.this.getContext(), -1, charecterList1);
             this.charecterList1 = charecterList1;
         }
         public String readTextFile(InputStream inputStream) {

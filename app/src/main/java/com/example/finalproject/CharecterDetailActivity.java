@@ -18,7 +18,7 @@ public class CharecterDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spell_detail);
         Intent lastIntent = getIntent();
-        charecter = lastIntent.getParcelableExtra(CharectersListFragment.EXTRA_POSITION);
+        charecter = lastIntent.getParcelableExtra(CharactersListFragment.EXTRA_POSITION);
         wireWidgets();
         house.setText(charecter.getHouse());
         name.setText(charecter.getName());
