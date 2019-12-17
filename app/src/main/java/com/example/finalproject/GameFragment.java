@@ -1,14 +1,20 @@
 package com.example.finalproject;
 
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Chronometer;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import java.util.List;
 
 public class GameFragment extends Fragment {
 
@@ -20,6 +26,12 @@ public class GameFragment extends Fragment {
     private ImageView snapeFace6;
     private ImageView snapeFace7;
     private ImageView snapeFace8;
+    private ImageView[] snapes;
+    private TextView scoreText;
+    private Button play;
+    private Chronometer timer;
+    private int scoreInt;
+
 
     @Nullable
     @Override
@@ -34,8 +46,30 @@ public class GameFragment extends Fragment {
         so we need to make a new activity?
         so that the program will run and do certain  things, so its not just all within the button
         being clicked.
-        and then we need to
         */
+        snapes = new ImageView[] { snapeFace1, snapeFace2, snapeFace3,
+                snapeFace4, snapeFace5, snapeFace6, snapeFace7, snapeFace8};
+
+        snapeFace1.setVisibility(View.INVISIBLE);
+        snapeFace2.setVisibility(View.INVISIBLE);
+        snapeFace3.setVisibility(View.INVISIBLE);
+        snapeFace4.setVisibility(View.INVISIBLE);
+        snapeFace5.setVisibility(View.INVISIBLE);
+        snapeFace6.setVisibility(View.INVISIBLE);
+        snapeFace7.setVisibility(View.INVISIBLE);
+        snapeFace8.setVisibility(View.INVISIBLE);
+        scoreText.setVisibility(View.INVISIBLE);
+        play.setVisibility(View.VISIBLE);
+        scoreText.setVisibility(View.INVISIBLE);
+
+        timer.setOnChronometerTickListener(new Chronometer.OnChronometerTickListener() {
+            @Override
+            public void onChronometerTick(Chronometer chronometer) {
+                int x = (int)(Math.random() * 8);
+                snapes[x].setVisibility(View.VISIBLE);
+            }
+        });
+
 
         return container;
     }
