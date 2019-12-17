@@ -31,6 +31,7 @@ public class SpellQuizFragment extends Fragment {
     private Button buttonFalse;
     private int currentQuestion;
     public static final String EXTRA_SCORE = "score";
+    public static final String SPELL_QUIZ_ID = "SpellQuizFragment";
 
 
     private int score;
@@ -81,7 +82,7 @@ public class SpellQuizFragment extends Fragment {
                     if(currentQuestion == 10){
                         //go to end screen
                         Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizActivity.class);
-                        scoreIntent.putExtra("SPELL_QUIZ_ID","SpellQuizFragment");
+                        scoreIntent.putExtra(SPELL_QUIZ_ID,"SpellQuizFragment");
                         scoreIntent.putExtra(EXTRA_SCORE, score);
                         startActivity(scoreIntent);
                         score = 0;
@@ -107,7 +108,7 @@ public class SpellQuizFragment extends Fragment {
                         //go to end screen
                         Intent scoreIntent = new Intent(SpellQuizFragment.this.getContext(), EndQuizActivity.class);
                         scoreIntent.putExtra(EXTRA_SCORE, score);
-                        scoreIntent.putExtra("SPELL_QUIZ_ID","SpellQuizFragment");
+                        scoreIntent.putExtra(SPELL_QUIZ_ID,"SpellQuizFragment");
                         startActivity(scoreIntent);
                         score = 0;
                         currentQuestion = 0;

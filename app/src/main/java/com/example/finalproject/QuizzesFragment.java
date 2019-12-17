@@ -31,7 +31,7 @@ public class QuizzesFragment extends Fragment {
         buttonCharactersQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new SpellQuizFragment();
+                Fragment fragment = new CharactersQuizFragment();
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.constraintLayout_main_container, fragment).commit();
             }
         });
@@ -39,9 +39,11 @@ public class QuizzesFragment extends Fragment {
         buttonSpellsQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Fragment fragment = new SpellQuizFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.constraintLayout_main_container, fragment).commit();
             }
         });
+
 
         return rootView;
     }
