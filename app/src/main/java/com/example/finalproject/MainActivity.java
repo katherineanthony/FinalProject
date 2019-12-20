@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        Fragment fragment = new Homefragment();
+        FragmentManager fm = getSupportFragmentManager();
+        if (fragment != null) {
+            fm.beginTransaction()
+                    .replace(R.id.constraintLayout_main_container, fragment)
+                    .commit();
+        }
     }
 
     @Override
