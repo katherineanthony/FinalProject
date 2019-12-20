@@ -28,7 +28,7 @@ public class EndQuizActivity extends AppCompatActivity {
         String scoreMessage2 = getString(R.string.scoreMessage2);
         Intent lastIntent = getIntent();
         score = lastIntent.getIntExtra(SpellQuizFragment.EXTRA_SCORE, -1);
-        textViewScore.setText(scoreMessage1 + score + scoreMessage2);
+        textViewScore.setText(scoreMessage1 + " " + score + " " + scoreMessage2);
         setListoners();
     }
 
