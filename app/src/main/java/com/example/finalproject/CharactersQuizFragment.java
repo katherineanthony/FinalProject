@@ -81,9 +81,9 @@ public class CharactersQuizFragment extends Fragment {
                 currentQuestion++;
                 if(currentQuestion == 10){
                     //go to end screen
-                    Intent scoreIntent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizActivity2.class);
-                    scoreIntent.putExtra(EXTRA_SCORE, score);
-                    startActivity(scoreIntent);
+                    Intent score2Intent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizActivity2.class);
+                    score2Intent.putExtra(EXTRA_SCORE, score);
+                    startActivity(score2Intent);
                     score = 0;
                     currentQuestion = 0;
                     textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
