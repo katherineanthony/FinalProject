@@ -1,6 +1,5 @@
 package com.example.finalproject;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.core.view.GravityCompat;
@@ -36,8 +35,13 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
-
-        Intent lastIntent = getIntent();
+        Fragment fragment = new Homefragment();
+        FragmentManager fm = getSupportFragmentManager();
+        if (fragment != null) {
+            fm.beginTransaction()
+                    .replace(R.id.constraintLayout_main_container, fragment)
+                    .commit();
+        }
     }
 
     @Override
