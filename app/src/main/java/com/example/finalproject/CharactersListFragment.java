@@ -73,7 +73,7 @@ public class CharactersListFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 Charecter charecterClicked = charecterList.get(position);
-                Intent listViewClicked = new Intent(CharactersListFragment.this.getContext(), SpellDetailActivity.class);
+                Intent listViewClicked = new Intent(CharactersListFragment.this.getContext(), CharecterDetailActivity.class);
                 listViewClicked.putExtra(EXTRA_POSITION, charecterClicked);
                 startActivity(listViewClicked);
             }
