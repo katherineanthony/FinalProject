@@ -33,8 +33,17 @@ public class MainActivity extends AppCompatActivity
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
+
+
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = new Homefragment();
+        if (fragment != null) {
+            fm.beginTransaction()
+                    .replace(R.id.constraintLayout_main_container, fragment)
+                    .commit();
+        }
     }
 
     @Override
