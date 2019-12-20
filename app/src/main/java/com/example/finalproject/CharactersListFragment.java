@@ -41,7 +41,7 @@ public class CharactersListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // inflate the fragment_pythagorean layout
-        View rootView = inflater.inflate(R.layout.fragment_spells_list, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_charecters_list, container, false);
         // wire widgets using that layout
         // call findViewById on the rootView
         InputStream questionsInputStream = getResources().openRawResource(R.raw.characters);
@@ -55,9 +55,10 @@ public class CharactersListFragment extends Fragment {
         // verify that it read everything properly
         Log.d(TAG, "onCreate: " + charecterList.toString());
         wireWidgets(rootView);
-        setListeners();
+
         charecterAdapter = new CharecterAdapter(charecterList);
         characterListView.setAdapter(charecterAdapter);
+        setListeners();
         // return the inflated view
         return rootView;
     }
@@ -97,14 +98,14 @@ public class CharactersListFragment extends Fragment {
 
 
     private class CharecterAdapter extends ArrayAdapter<Charecter> {
-        private List<Charecter> charecterList1;
-        public CharecterAdapter(List<Charecter> charecterList1) {
+        private List<Charecter> charecterList;
+        public CharecterAdapter(List<Charecter> charecterList) {
             //since we're in the HeroListActivity class, we already have the context
             // we're hardcoding in a particular layout, so don't need to put it in the
             // constructer either
             // we'll send a place holder resource to the superclass of -1
-            super(CharactersListFragment.this.getContext(), -1, charecterList1);
-            this.charecterList1 = charecterList1;
+            super(CharactersListFragment.this.getContext(), -1, charecterList);
+            this.charecterList = charecterList;
         }
         public String readTextFile(InputStream inputStream) {
             ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -128,7 +129,7 @@ public class CharactersListFragment extends Fragment {
             // 1. inflate layout
             LayoutInflater inflater = getLayoutInflater();
             if(convertView == null){
-                convertView = inflater.inflate(R.layout.item_spell, parent, false);
+                convertView = inflater.inflate(R.layout.item_charecter, parent, false);
             }
             // 2. wire widgets & link the hero to those widgets
             charecterName = convertView.findViewById(R.id.texView_charecterListFragment_charecterName);
@@ -138,8 +139,8 @@ public class CharactersListFragment extends Fragment {
             // set values for each widget. use the position parameter variable
             // to get the hero that you need out of the list
             // and set the values for the widgets
-            charecterName.setText(charecterList1.get(position).getName());
-            house.setText(String.valueOf(charecterList1.get(position).getHouse()));
+            charecterName.setText(charecterList.get(position).getName());
+            house.setText(charecterList.get(position).getHouse());
 
 
             //3. return inflated view
