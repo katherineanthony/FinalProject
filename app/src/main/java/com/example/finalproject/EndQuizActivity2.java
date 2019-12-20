@@ -41,6 +41,8 @@ public class EndQuizActivity2 extends AppCompatActivity {
         buttonPlayAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent finishIntent2 = new Intent(EndQuizActivity2.this, MainActivity.class);
+                startActivity(finishIntent2);
                 finish();
 
             }
