@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-public class EndQuizActivity extends AppCompatActivity {
+public class EndQuizActivity2 extends AppCompatActivity {
     private int score;
     private Button buttonPlayAgain;
     private TextView textViewScore;
@@ -27,11 +27,10 @@ public class EndQuizActivity extends AppCompatActivity {
         String scoreMessage1 = getString(R.string.scoreMessage1);
         String scoreMessage2 = getString(R.string.scoreMessage2);
         Intent lastIntent = getIntent();
-        score = lastIntent.getIntExtra(SpellQuizFragment.EXTRA_SCORE, -1);
+        score = lastIntent.getIntExtra(CharactersQuizFragment.EXTRA_SCORE, -1);
         textViewScore.setText(scoreMessage1 + score + scoreMessage2);
         setListoners();
     }
-
     private void wireWidgets() {
 
         buttonPlayAgain = findViewById(R.id.button_end_restart);
@@ -42,11 +41,12 @@ public class EndQuizActivity extends AppCompatActivity {
         buttonPlayAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent finishIntent = new Intent(EndQuizActivity.this, MainActivity.class);
-                startActivity(finishIntent);
+                Intent finishIntent2 = new Intent(EndQuizActivity2.this, MainActivity.class);
+                startActivity(finishIntent2);
                 finish();
 
             }
         });
     }
 }
+
