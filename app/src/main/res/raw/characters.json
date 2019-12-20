@@ -4,9 +4,9 @@
 "house": "Gryffindor ",
 "patronus": "Stag",
 "desc": "Main character of the Harry Potter series. ",
-"bloodstatus": "Half-Blood",
+"bloodStatus": "Half-Blood",
  "wand": " 11 inch, Holly, phoenix feather",
- "image":"harry_potter'"
+ "image":"harry_potter"
 
   },
   {
@@ -14,7 +14,7 @@
     "house": "Gryffindor",
     "patronus": "Jack Russell terrier",
     "desc": "Harry Potter's best friend, known for his large family and hair color.",
-    "bloodstatus": "Prue-Blood",
+    "bloodStatus": "Prue-Blood",
     "wand": "12 inch, Ash, unicorn tail hair",
     "image": "ron_weasley"
   },
@@ -23,7 +23,7 @@
     "house": "Gryffindor",
     "patronus": "Otter",
     "desc": "One of Harry Potter's best friends known for her academics and knowledge.",
-    "bloodstatus": "Muggle-Born",
+    "bloodStatus": "Muggle-Born",
     "wand": "10¾ inch, vine wood, dragon heartstring",
     "image": "herminonie_granger"
   },
@@ -32,7 +32,7 @@
   "house": "Headmaster Of Hogwarts",
   "patronus": "Phoenix",
   "desc": "Headmaster of Hogwarts and holder of the Elder Wand. Becomes Harry's mentor throughout the books.",
-  "bloodstatus": "Half-Blood",
+  "bloodStatus": "Half-Blood",
   "wand": "15 inch, Elder, Thestral tail hair core",
     "image": "albus_dumbledore"
   },
@@ -41,16 +41,16 @@
     "house": "Gryffindor",
     "patronus": null,
     "desc": "Friend of Harry Potter who is very clumsy and has an overprotective grandmother.",
-    "bloodstatus": "Prue-Blood",
+    "bloodStatus": "Prue-Blood",
     "wand": "13 inch, Cherry, unicorn hair",
-    "image": "neville_longbottom"
+    "image": "neville_longbotton"
   },
   {
     "name": "Luna Lovegood",
     "house": "Ravenclaw",
     "patronus": "Hare",
     "desc": "Odd friend of Harry Potter who saw her mother die, lives with her eccentric dad.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": null,
     "image": "luna_lovegood"
   },
@@ -59,7 +59,7 @@
     "house": "Head of Gryffindor ",
     "patronus": "Cat",
     "desc": "Transfiguration teacher at Hogwarts, has the animagus of a cat ",
-    "bloodstatus": "Half-Blood",
+    "bloodStatus": "Half-Blood",
     "wand": "9½ inch, Fir, dragon heartstring",
     "image": "mcgonagall"
   },
@@ -68,7 +68,7 @@
     "house": "Gryffindor ",
     "patronus": null,
     "desc": "The Gryffindor prefect in Harry's early years.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": null,
     "image": "percy_weasley"
   },
@@ -77,7 +77,7 @@
     "house": "Gryffindor",
     "patronus": "Magpie",
     "desc": "Older brother of Ron, known for his hilarity and magic joke shop owned with his brother, George.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": null,
     "image": "fred_weasley"
   },
@@ -86,7 +86,7 @@
     "house": "Gryffindor",
     "patronus": "Magpie",
     "desc": "Twin Brother of Fred Weasley also known for his jokes and hyjinks.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": null,
     "image": "george_weasley"
   },
@@ -95,7 +95,7 @@
     "house": "Hogwarts Grounds Keeper",
     "patronus": null,
     "desc": "The groundskeeper and close friend of Harry Potter, expelled from Hogwarts in his 3rd year.",
-    "bloodstatus": "Half-Blood",
+    "bloodStatus": "Half-Blood",
     "wand": "16 inch, Oak, unknown core",
     "image": "rubues_hagrid"
   },
@@ -104,7 +104,7 @@
     "house": "Gryffindor",
     "patronus": "Horse",
     "desc": "Youngest and only sister in the Weasley household, becomes romantically involved with Harry in his 6th year.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": null,
     "image": "ginny_weasley"
   },
@@ -113,7 +113,7 @@
     "house": "Head of Slytherin",
     "patronus": "Doe",
     "desc": "Potions teacher at Hogwarts, known for hating Harry because his dad saved his life.",
-    "bloodstatus": "Half-Blood",
+    "bloodStatus": "Half-Blood",
     "wand": null,
     "image": "severus_snape"
   },
@@ -122,7 +122,7 @@
     "house": "Gryffindor",
     "patronus": "Doe",
     "desc": "Mother of Harry Potter, known for protecting Harry with her love.",
-    "bloodstatus": "Muggle-Born",
+    "bloodStatus": "Muggle-Born",
     "wand": "10¼ inch, Willow, unknown core",
     "image": "lily_potter"
   },
@@ -131,7 +131,7 @@
     "house": "Gryffindor",
     "patronus": "Stag",
     "desc": "Father of Harry Potter, 1/4 of the muaraders and has an animangus of a stag.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": "11 inch, Mahogany, unknown core",
     "image": "james_potter"
   },
@@ -140,7 +140,7 @@
     "house": "Gryffindor",
     "patronus": null,
     "desc": "Godfather of Harry Potter, was Harry's father figure.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": null,
     "image": "sirius_black"
   },
@@ -149,7 +149,7 @@
     "house": "Auror",
     "patronus": "Wolf",
     "desc": "Defense Against The Dark Arts teacher for one year, known for being a muarader and a werewolf.",
-    "bloodstatus": "Half-Blood",
+    "bloodStatus": "Half-Blood",
     "wand": "10¼ inch, Cypress, unicorn hair",
     "image": "remus_lupin'"
   },
@@ -158,7 +158,7 @@
     "house": "Slytherin",
     "patronus": null,
     "desc": "The arch-nemises of Harry Potter, known for his Death-Eater father and former house-elf, Dobby.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": "18 inch, Elm, dragon heartstring",
     "image": "draco_malfoy"
   },
@@ -167,7 +167,7 @@
     "house": "Death Eater",
     "patronus": null,
     "desc": "Father of Draco Malfoy, known for being a Death-Eater.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": "Elm and dragon heartstring",
     "image": "lucius_malfoy"
   },
@@ -176,7 +176,7 @@
     "house": "HufflePuff",
     "patronus": null,
     "desc": "Participant in the Triwizard Tournament, is killed before the resurrection of Voldemort.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": " 12¼ inch, Ash, unicorn hair",
     "image": "cedric_diggory"
   },
@@ -185,7 +185,7 @@
     "house": "Voldemort",
     "patronus": null,
     "desc": "Dark Lord who tried to kill Harry Potter as a baby",
-    "bloodstatus": "Half-Blood",
+    "bloodStatus": "Half-Blood",
     "wand": "13½ inch, Yew, phoenix feather core",
     "image": "tom"
   },
@@ -194,7 +194,7 @@
     "house": "Death Eater",
     "patronus": null,
     "desc": " A loyal death eater and killer of Sirius Black. Carved 'mudblood' into Hermione's arm.",
-    "bloodstatus": "Pure-Blood",
+    "bloodStatus": "Pure-Blood",
     "wand": "12¾ inch, Walnut, dragon heartstring",
     "image": "bellatrix_lestrange"
   }
