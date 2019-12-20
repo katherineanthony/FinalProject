@@ -16,7 +16,7 @@ public class CharecterDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_spell_detail);
+        setContentView(R.layout.activity_charecter_detail);
         Intent lastIntent = getIntent();
         charecter = lastIntent.getParcelableExtra(CharactersListFragment.EXTRA_POSITION);
         wireWidgets();

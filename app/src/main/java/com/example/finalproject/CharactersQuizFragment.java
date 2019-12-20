@@ -31,6 +31,7 @@ public class CharactersQuizFragment extends Fragment {
     private Button buttonFalse;
     private int currentQuestion;
     public static final String EXTRA_SCORE = "score";
+    public static final String CHARACTER_QUIZ_ID = "CharacterQuizFragment";
 
 
     private int score;
@@ -45,7 +46,7 @@ public class CharactersQuizFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_characters_quiz, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_spell_quiz, container, false);
 
         InputStream questionsInputStream = getResources().openRawResource(R.raw.characters_quiz);
         String jsonString = readTextFile(questionsInputStream);
@@ -80,10 +81,9 @@ public class CharactersQuizFragment extends Fragment {
                 currentQuestion++;
                 if(currentQuestion == 10){
                     //go to end screen
-                    Intent scoreIntent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizActivity.class);
-                    scoreIntent.putExtra(EXTRA_SCORE, score);
-                    scoreIntent.putExtra("CHARACTER_QUIZ_ID","CharacterQuizFragment");
-                    startActivity(scoreIntent);
+                    Intent score2Intent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizActivity2.class);
+                    score2Intent.putExtra(EXTRA_SCORE, score);
+                    startActivity(score2Intent);
                     score = 0;
                     currentQuestion = 0;
                     textViewQuestions.setText(String.valueOf(quiz.getQuestion(currentQuestion)));
@@ -105,9 +105,8 @@ public class CharactersQuizFragment extends Fragment {
                 currentQuestion++;
                 if(currentQuestion == 10){
                     //go to end screen
-                    Intent scoreIntent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizActivity.class);
+                    Intent scoreIntent = new Intent(CharactersQuizFragment.this.getContext(), EndQuizActivity2.class);
                     scoreIntent.putExtra(EXTRA_SCORE, score);
-                    scoreIntent.putExtra("CHARACTER_QUIZ_ID","CharacterQuizFragment");
                     startActivity(scoreIntent);
                     score = 0;
                     currentQuestion = 0;
