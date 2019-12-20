@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SpellDetailActivity"></activity>
+        <activity android:name=".CharecterDetailActivity"></activity>
         <activity android:name=".EndQuizActivity"></activity>
         <activity android:name=".EndQuizActivity2"></activity>
         <activity
